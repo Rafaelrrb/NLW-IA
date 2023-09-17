@@ -1,0 +1,43 @@
+pnpm init
+ comecando projeto
+
+pnpm i typescript @types/node tsx -D
+
+pnpm i fastify 
+  Rotas http
+
+pnpm run dev
+  rodando server
+
+pnpm i prisma -D
+  banco de dados
+
+pnpm prisma init --datasource-provider sqlite
+  criando um banco sqlite para rodar local depois pode ser trocado 
+
+pnpm prisma migrate dev
+  cria as tabelas
+
+pnpm prisma studio
+  para olhar o banco de dados criado 
+
+npm i @fastify/multipart
+  ref(https://www.npmjs.com/package/@fastify/multipart)
+
+pnpm i zod 
+  para validação
+
+pnpm i openai
+  ref(https://platform.openai.com/account/api-keys)
+
+pnpm i dotenv -D
+  para usar variaveis env
+
+pnpm i @fastify/cors
+  define quem pode usar
+
+pnpm i ai
+  ajuda do retorno da resposta da ia 
+
+pnpm prisma db seed
+  roda o seed dentro de prisma para criar os campos

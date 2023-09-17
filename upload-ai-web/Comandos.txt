@@ -1,0 +1,68 @@
+pnpm create vite  
+  ref(https://vitejs.dev/guide/)
+
+pnpm add -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+  Vai instalar tailwindcss ref(https://tailwindui.com/documentation) e o radix ref(https://www.radix-ui.com/primitives/docs/overview/introduction) já fazendo a instalação pelo "shadcn" que tambem sera usado 
+  ref(https://ui.shadcn.com/docs/installation/vite)
+
+Etapa 3 seguindo conteudo do shadcn
+  "baseUrl": ".",
+  "paths": {
+    "@/*": ["./src/*"]
+  }
+
+Etapa 4 
+  # (so you can import "path" without error)
+  pnpm i -D @types/node
+
+  Ainda na etapa 4
+    lembre de importar: import path from 'path'
+      resolve: {
+        alias: {
+          "@": path.resolve(__dirname, "./src"),
+        },
+      },
+
+Etapa 5 
+  pnpm dlx shadcn-ui@latest init
+
+Etapa 6
+  -Would you like to use TypeScript(recommended)? Yes
+  -Which style would you like to use? New York
+  -Which color would you like to use as base color? Zinc
+  -Where is your global CSS file? › src/index.css
+  -Would you like to use CSS variables for colors? Yes
+  -Where is your tailwind.config.js located? tailwind.config.js
+  -Configure the import alias for components: @/components
+  -Configure the import alias for utils: @/lib/utils
+  -Are you using React Server Components? No
+
+Etapa 7 
+  pnpm dlx shadcn-ui@latest add button
+
+
+Rodando o projeto:
+  pnpm run dev
+
+https://ui.shadcn.com/themes pegar os temas
+
+pnpm i lucide-react
+  para pegar icones
+
+Componente que foram usados
+  pnpm dlx shadcn-ui@latest add separator
+  pnpm dlx shadcn-ui@latest add textarea
+  pnpm dlx shadcn-ui@latest add label 
+  pnpm dlx shadcn-ui@latest add select
+  pnpm dlx shadcn-ui@latest add slider
+
+pnpm i @ffmpeg/ffmpeg @ffmpeg/util
+  Converte video em audio pelo navegador
+  ref(https://ffmpegwasm.netlify.app/docs/getting-started/installation)
+
+pnpm i axios
+  consumir a api
+
+pnpm i ai
+  tambem foi usado na api
